@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+
+        <!-----Normalize-->
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-----Estilo personalizado-->
+    <link rel="preload" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <title>Developer Page</title>
 </head>
 <body>
     <header>
-        <h1>Rodriguez Fabrizio Developer</h1>
+        <h1 class="my-title"> Rodriguez Fabrizio <span>Developer</span> </h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -47,6 +57,27 @@
 
    <section>
     <h2>Contacto</h2>
+    <form>
+        <fieldset>
+            <legend>Llena tus datos de contacto</legend>
+            <div><label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre">
+        </div>
+        <div><label>Teléfono</label>
+                <input type="text" placeholder="Tu número">
+        </div>
+        <div><label>Email</label>
+                <input type="text" placeholder="Tu correo electrónico">
+        </div>
+        <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        </fieldset>
+    </form>
    </section>
    <footer>
     <p>Todos los derechos reservados ©. Fabrizio Rodriguez Pérez</p>
